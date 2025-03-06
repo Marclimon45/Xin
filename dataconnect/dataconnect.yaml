@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "xin"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "xin-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
